@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "83229494608",
+    "project_id": "teamsync-3d510",
+    "storage_bucket": "teamsync-3d510.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83229494608:android:cdf6a1605575181ba9b055",
+        "android_client_info": {
+          "package_name": "com.henrique.teamsync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChVSGbSEg9sVJWlmNKkGfXJ3TrG6yAe_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

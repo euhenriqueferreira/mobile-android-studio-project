@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/edit_text_rounded_bg"
+    android:paddingLeft="13dp"
+    android:paddingTop="12dp"
+    android:paddingRight="13dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/textViewProjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Name"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewProjectDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Project Deadline"
+        android:textColor="#BEFFFFFF" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1A2F"
+    tools:context=".CreateTaskFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:id="@+id/textViewTaskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Criar Tarefa"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edtTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTaskTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded_fill"
+            android:backgroundTint="#39304B"
+            android:drawableLeft="@drawable/ic_project_name"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Nome do projeto"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="0px"
+            android:paddingBottom="12dp"
+            android:textColor="#FAF8F8"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/edtTaskDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTaskName"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top|start"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded_fill"
+            android:backgroundTint="#39304B"
+            android:ems="10"
+            android:gravity="top|start"
+            android:hint="Descrição"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="5"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:scrollbars="vertical"
+            android:textColor="#FAF8F8"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/edtTaskDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTaskDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded_fill"
+            android:backgroundTint="#39304B"
+            android:drawableLeft="@drawable/ic_menu_my_calendar"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Prazo do projeto"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="0px"
+            android:paddingBottom="12dp"
+            android:textColor="#FAF8F8"
+            android:textColorHint="#888888" />
+
+        <Button
+            android:id="@+id/btnCreateTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTaskDeadline"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0BF3E2"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="80dp"
+            android:paddingTop="8dp"
+            android:paddingRight="80dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:text="CRIAR"
+            android:textColor="#1D1A2F"
+            android:textSize="23dp" />
+    </RelativeLayout>
+
+</FrameLayout>

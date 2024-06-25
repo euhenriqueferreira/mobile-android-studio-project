@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="top"
+    android:background="#1D1A2F">
+
+    <EditText
+        android:id="@+id/ediTextProjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/poppins_bold"
+        android:inputType="text"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="Project Name"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textViewProjectId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ediTextProjectName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="ProjectId"
+        android:textColor="#7AFFFFFF"
+        android:textSize="12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProjectId"
+        android:id="@+id/DeadlineRelativeLayout"
+        android:background="@drawable/edit_text_rounded_bg"
+        android:paddingLeft="13dp"
+        android:paddingTop="12dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Prazo de Entrega"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextProjectDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="@font/poppins"
+            android:inputType="text"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Project Deadline"
+            android:textColor="#B4FFFFFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/DescRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeadlineRelativeLayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_rounded_bg"
+        android:paddingLeft="13dp"
+        android:paddingTop="12dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/textViewDescTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Descrição do Projeto"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextProjectDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:text="Project Description"
+            android:textColor="#B4FFFFFF"
+            android:textSize="14sp"
+            android:layout_below="@id/textViewDescTitle"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:backgroundTint="#00FFFFFF"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ListTasksTitleRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DescRelativeLayout"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lista de Tarefas"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#C3FFFFFF"
+            android:textSize="23dp"/>
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#39304B"
+            android:drawableTop="@drawable/ic_add"
+            android:text="" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ListTasksTitleRelativeLayout"/>
+
+    <Button
+        android:id="@+id/btnSaveProjectChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewTasks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="SALVAR"
+        android:backgroundTint="#0BF3E2"
+        android:fontFamily="@font/poppins"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="40dp"
+        android:paddingTop="7dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="7dp"
+        android:textColor="#1D1A2F"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/btnDeleteProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewTasks"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#39304B"
+        android:paddingLeft="17dp"
+        android:paddingTop="5dp"
+        android:paddingRight="17dp"
+        android:paddingBottom="5dp"
+        android:text="Excluir projeto"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp" />
+
+</RelativeLayout>
